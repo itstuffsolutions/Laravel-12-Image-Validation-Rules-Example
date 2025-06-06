@@ -12,17 +12,7 @@
     <div class="d-flex justify-content-center align-items-center vh-100 bg-light">
         <div class="col-12 col-md-6 col-lg-6">
             <div class="border p-4 rounded bg-white shadow">
-                <h4 class="mb-4 text-center"><img src="{{asset('itstuffsolutions.png')}}" width="50"/>   Laravel 12 Image Validation Rules Example Tutorial - ItStuffSolutions.io</h4>
-
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+                <h4 class="mb-4 text-center"><img src="{{asset('itstuffsolutions.png')}}" width="50"/>   Laravel 12 Image Validation Rules Example Tutorial - ItStuffSolutions.io</h4>               
                 @session('success')
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                   {{ $value }}
@@ -52,13 +42,13 @@
 
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 
 </html>
